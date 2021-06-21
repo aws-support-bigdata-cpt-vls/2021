@@ -1,8 +1,8 @@
 # 2021
 
-#Big Data Processing on AWS Elastic MapReduce (EMR) using Hadoop and Spark#
+# Big Data Processing on AWS Elastic MapReduce (EMR) using Hadoop and Spark #
 
-##An AWS Learning and Recruiting Event##
+## An AWS Learning and Recruiting Event ##
 
 We look forward to seeing you there!
 
@@ -16,7 +16,7 @@ Are you interested in learning how to start a career at AWS? Or finding out what
 You will learn these things and more during our virtual recruiting event "Big Data Process on AWS Elastic MapReduce (EMR) using Hadoop and Spark” on 21, 22 and 25 June, 2021.
 
 
-##Topics covered will include:##
+## Topics covered will include: ##
 An introduction to Cape Town AWS Premium Support - Big Data Team
 An introduction to the Hadoop framework and its use in scalable distributed data processing in the cloud
 An introduction to Big Data processing using Spark applications
