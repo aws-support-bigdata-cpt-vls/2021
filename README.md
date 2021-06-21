@@ -37,5 +37,5 @@ Please note that registration for this event is required. Once your registration
 
 Please note, you must receive a confirmation email in order to attend.
 
-#### #AWS #cloudcomputing #BigData #Hive #Yarn #ApacheSpark #Hadoop #DistributedSystems #Developer #SoftwareEngineering #HiringEvent #VLS #VirtualLearningSeries
+####  #AWS #cloudcomputing #BigData #Hive #Yarn #ApacheSpark #Hadoop #DistributedSystems #Developer #SoftwareEngineering #HiringEvent #VLS #VirtualLearningSeries
 ![home](home.jpeg)
