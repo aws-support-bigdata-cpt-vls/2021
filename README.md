@@ -6,7 +6,7 @@
 
 We look forward to seeing you there!
 
-21, 22 and 25 June, 2021
+2, 3 and 6 September, 2021
 
 6PM - 9PM SAST
 About
