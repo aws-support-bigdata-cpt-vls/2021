@@ -9,7 +9,8 @@ We look forward to seeing you there!
 2, 3 and 6 September, 2021
 
 6PM - 9PM SAST
-About
+
+## About ##
 
 Are you interested in learning how to start a career at AWS? Or finding out what it takes to be successful in the interview process with us? How about the culture at AWS?
 
