@@ -14,7 +14,7 @@ We look forward to seeing you there!
 
 Are you interested in learning how to start a career at AWS? Or finding out what it takes to be successful in the interview process with us? How about the culture at AWS?
 
-You will learn these things and more during our virtual recruiting event "Big Data Process on AWS Elastic MapReduce (EMR) using Hadoop and Spark” on 21, 22 and 25 June, 2021.
+You will learn these things and more during our virtual recruiting event "Big Data Process on AWS Elastic MapReduce (EMR) using Hadoop and Spark” on 2, 3 and 6 September, 2021.
 
 
 ## Topics covered will include: ##
