@@ -29,20 +29,20 @@
   aws s3 ls s3://amazon-reviews-pds/parquet/product_category=Digital_Software/
   ```
   
-  ![fig11](./resources/fig11.png)
+  ![fig11](./resources/fig11.PNG)
 
 2. Copy the first file in the list to your home using the following command:
   ```
   aws s3 cp s3://amazon-reviews-pds/parquet/product_category=Digital_Software/part-00000-495c48e6-96d6-4650-aa65-3c36a3516ddd.c000.snappy.parquet .
   ```
-  ![fig12](./resources/fig12.png)
+  ![fig12](./resources/fig12.PNG)
 
 3. Copy the file which you copied in the previous step from your home directory to HDFS using the command below:
   ```
   hdfs dfs -put part-00000-495c48e6-96d6-4650-aa65-3c36a3516ddd.c000.snappy.parquet /user/hadoop
   
   ```
-  ![fig13](./resources/fig13.png)
+  ![fig13](./resources/fig13.PNG)
 
   To verify that the file has been copied to HDFS (`/user/hadoop/part-00000-495c48e6-96d6-4650-aa65-3c36a3516ddd.c000.snappy.parquet`), you can run:
   ```

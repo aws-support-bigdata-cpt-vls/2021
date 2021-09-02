@@ -30,7 +30,7 @@
   ```
   wget https://raw.githubusercontent.com/apache/hadoop/trunk/hadoop-mapreduce-project/hadoop-mapreduce-examples/src/main/java/org/apache/hadoop/examples/WordCount.java
   ```
-  ![download](./resources/download.png)
+  ![download](./resources/download.PNG)
 
 2. Create a directory
 
@@ -42,7 +42,7 @@
   ```
   javac -cp /usr/lib/hadoop/*:/usr/lib/hadoop-mapreduce/* WordCount.java -d build -Xlint
   ```
-  ![wordcount](./resources/wordcount.png)
+  ![wordcount](./resources/wordcount.PNG)
 
 
 ## Part 3: Create Wordcount jar and run the Wordcount application
@@ -68,16 +68,16 @@
 
   hdfs fsck /user/hadoop/amazon_reviews_us_Pet_Products_v1_00.tsv -files -blocks
   ```
-  ![put_hdfs](./resources/put_hdfs.png)    
+  ![put_hdfs](./resources/put_hdfs.PNG)    
 
 5. Run the Hadoop wordcount program
 
   ```
   hadoop jar wordcount.jar org.apache.hadoop.examples.WordCount /user/hadoop/amazon_reviews_us_Pet_Products_v1_00.tsv /user/hadoop/output
   ```
-  ![job1](./resources/job1.png)
+  ![job1](./resources/job1.PNG)
 
-  ![job2](./resources/job2.png)
+  ![job2](./resources/job2.PNG)
 
 6. View the wordcount output file. You can use Ctrl_C to stop the results as the file is big
   ```
