@@ -48,13 +48,13 @@
   ```
   hdfs dfs -ls /user/hadoop
   ```
-  ![fig14](./resources/fig14.png)
+  ![fig14](./resources/fig14.PNG)
 
 4. Check the file block location for the above file using the command:
   ```
   hdfs fsck /user/hadoop/part-00000-495c48e6-96d6-4650-aa65-3c36a3516ddd.c000.snappy.parquet -files  -blocks -locations
   ```
-  ![fig15](./resources/fig15.png)
+  ![fig15](./resources/fig15.PNG)
 
   * What is the current replication factor?      
   * How many HDFS blocks were created from the file?
@@ -65,25 +65,25 @@
   hdfs dfs -setrep 3 /user/hadoop/part-00000-495c48e6-96d6-4650-aa65-3c36a3516ddd.c000.snappy.parquet
   hdfs fsck /user/hadoop/part-00000-495c48e6-96d6-4650-aa65-3c36a3516ddd.c000.snappy.parquet -files  -blocks -locations
   ```
-![fig16](./resources/fig16.png)
+![fig16](./resources/fig16.PNG)
 
 6. Download a new file from the S3 location using the command:
 ```
 aws s3 cp s3://amazon-reviews-pds/parquet/product_category=Digital_Software/part-00002-495c48e6-96d6-4650-aa65-3c36a3516ddd.c000.snappy.parquet .
 ```
-![fig17](./resources/fig17.png)
+![fig17](./resources/fig17.PNG)
 
 7. Copy the new file to HDFS and specify that a block size of 1MB (1\*1024\*1024 bytes) should be used.
 ```
 hdfs dfs -D dfs.blocksize=1048576 -put part-00002-495c48e6-96d6-4650-aa65-3c36a3516ddd.c000.snappy.parquet /user/hadoop
 ```
-![fig18](./resources/fig18.png)
+![fig18](./resources/fig18.PNG)
 
 8. Check the new file using the below command:
 ```
 hdfs fsck /user/hadoop/part-00002-495c48e6-96d6-4650-aa65-3c36a3516ddd.c000.snappy.parquet -files  -blocks -locations
 ```
-![fig19](./resources/fig19.png)
+![fig19](./resources/fig19.PNG)
 ## Part 3: HDFS administration
 
 1. Check the Namenode logs to understand which data node has the block. To do this, please find and open the log file with a command-line editor (vi, vim, nano) and check. You can exit vim using `:q!`
@@ -91,9 +91,9 @@ hdfs fsck /user/hadoop/part-00002-495c48e6-96d6-4650-aa65-3c36a3516ddd.c000.snap
   ls /var/log/hadoop-hdfs/
   vi /var/log/hadoop-hdfs/hadoop-hdfs-namenode-<IP address>.log
   ```
-  ![fig20](./resources/fig20.png)
+  ![fig20](./resources/fig20.PNG)
 
-  ![fig21](./resources/fig21.png)    
+  ![fig21](./resources/fig21.PNG)   
 
 2. Log on to a core node and check the data node logs as well. 
 To log on to core node, follow the same steps as used when connecting to the Master, but choose and instance from the Core instance group instead. After logging in to a Core node, check the data node logs in location `/var/log/hadoop-hdfs/`. The easiest way to do this is to run `ls /var/log/hadoop-hdfs/`, check the output for the log file and then run `vi /var/log/hadoop-hdfs/hadoop-hdfs-datanode-<node IP>.log`
@@ -106,9 +106,9 @@ To log on to core node, follow the same steps as used when connecting to the Mas
 
   ![fig25](./resources/fig25.png)
 
-  ![fig26](./resources/fig26.png)
+  ![fig26](./resources/fig26.PNG)
 
-  ![fig27](./resources/fig27.png)
+  ![fig27](./resources/fig27.PNG)
 
 
 
@@ -116,7 +116,7 @@ To log on to core node, follow the same steps as used when connecting to the Mas
 
 
 
-  ![fig28](./resources/fig28.png)
+  ![fig28](./resources/fig28.PNG)
 
 3. Log out of the core node and log on to the master node.
 
@@ -134,7 +134,7 @@ To log on to core node, follow the same steps as used when connecting to the Mas
   ```
   hdfs dfsadmin -safemode enter
   ```
-  ![fig29](./resources/fig29.png)
+  ![fig29](./resources/fig29.PNG)
 
     You can run `hdfs dfsadmin -safemode get` again to confirm that Namenode is in  is safe mode,
 
@@ -145,18 +145,18 @@ To log on to core node, follow the same steps as used when connecting to the Mas
 
   What do you observe?
 
-  ![add1](./resources/add1.png)
+  ![add1](./resources/add1.PNG)
 
 8.  Turn off safe mode by running the following command and repeat step 7 above. What do you observe?
   ```
   hdfs dfsadmin -safemode leave
   ```
-  ![fig30](./resources/fig30.png)
+  ![fig30](./resources/fig30.PNG)
 
 9. Run the following command to see summary information about HDFS.
   ```
   hdfs dfsadmin -report
   ```
-  ![fig31](./resources/fig31.png)
+  ![fig31](./resources/fig31.PNG)
 
 Congratulations, you have completed the HDFS lab.
