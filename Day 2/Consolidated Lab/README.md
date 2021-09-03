@@ -96,7 +96,7 @@ df = spark\
    .load("hdfs:///user/hadoop/books/")
 
 df.printSchema()
-df..select("marketplace","customer_id", "product_id","product_category","star_rating","review_date",).show(10,5)
+df.select("marketplace","customer_id", "product_id","product_category","star_rating","review_date",).show(10,5)
 ```
 
 
@@ -146,6 +146,7 @@ customer = spark\
    .format('csv')\
    .schema(schema1)\
    .option('header', True)\
+   .option('delimiter','\t')\
    .option('maxFilesPerTrigger', 1)\
    .load("hdfs:///user/hadoop/books/")
 
@@ -301,7 +302,15 @@ CREATE EXTERNAL TABLE `book_reviews`(
   `verified_purchase` string, 
   `review_headline` string, 
   `review_body` string, 
-  `review_date` string)
+  `review_date` string, 
+  `col15` string, 
+  `col16` bigint, 
+  `col17` string, 
+  `col18` string, 
+  `col19` string, 
+  `col20` string, 
+  `col21` string, 
+  `col22` string)
 ROW FORMAT DELIMITED  FIELDS TERMINATED BY '\t' 
 STORED AS  TEXTFILE
 LOCATION 's3://<account-number>/<S3-location>'
